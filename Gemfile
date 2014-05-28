@@ -26,14 +26,20 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
+# gem 'spring',        group: :development
 
 # Use HAML as the default html template engine
 gem 'haml-rails'
 
 # <Added by Lta> Don't touch
 # rspec, and its dependencies, with a few extra tools
-#
+
+# The official and bestest CSS framework
+gem 'bootstrap-sass'
+
+# A textile parser
+gem 'RedCloth', require: 'redcloth'
+
 group :development, :test do
   gem 'minitest'
   # Testing framework for rails 3.x and 4.x
