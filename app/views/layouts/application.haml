@@ -1,0 +1,25 @@
+-# !!!
+%html
+  %head
+    %title= yield(:title) || "Gazooyr"
+    %meta{name: "viewport", content:"width=device-width, initial-scale=1.0"}
+
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+
+  %body
+    = render partial: 'shared/navbar'
+    .container
+      - if notice
+        .alert.alert-success= notice
+      - if alert
+        .alert.alert-error= alert
+      .row
+        .col-md-4
+          .well
+            FIXME: Puts a sidebar here
+          -# Adds the menu here
+          -# render partial: 'shared/sidebar'
+        .col-md-8
+          = yield
