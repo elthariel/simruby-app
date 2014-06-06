@@ -68,6 +68,10 @@ group :development, :test do
   # Provide more friendly errors
   gem 'better_errors'
   gem 'binding_of_caller', platform: :ruby
+  
+  # Layout inspector : Press cmd+shift+x (Mac) or ctrl+shift+x to reveal 
+  # an overlay of the files that rendered your UI, and click anything to open the file in your editor.
+  gem 'xray-rails'
 end
 # </Added by Lta>
 
